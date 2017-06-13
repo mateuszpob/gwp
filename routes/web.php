@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('check', 'UrlCheckController@check');
+Route::post('check', 'UrlCheckController@uploadFile');
