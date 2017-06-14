@@ -14,13 +14,18 @@ class SimpleApiController extends Controller {
     public function getOptions() {
         $response = array(
             array(
+                'method' => 'OPTIONS',
+                'url' => '/api',
+                'description' => 'Get this options'
+            ),
+            array(
                 'method' => 'GET',
-                'url' => '/urls',
+                'url' => '/api/urls',
                 'description' => 'Get all server response data'
             ),
             array(
                 'method' => 'GET',
-                'url' => '/urls/{$id}',
+                'url' => '/api/urls/{$id}',
                 'description' => 'Get specific server response data'
             )
         );
